@@ -2,72 +2,53 @@
 <html lang="en">
     <title>W3.CSS Template</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="resources/logoPetz.png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="libs/bs/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <script src="js/jquery-1.9.0.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        body {font-family: "Lato", sans-serif}
-        .mySlides {display: none}
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.55, user-scalable=0">
+<!--Ícone do site-->
+<link rel="shortcut icon" href="resources/logoPetz.png">
+<!--Ícones do fontawesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<!--Página de stilo do site-->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<!--Biblioteca Bootstrap-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<!--Font Roboto da Google-->
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<!--Jquery-->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <body>
 
-        <!-- Navbar -->
-        <div class="w3-top">
-            <div class="w3-bar w3-black w3-card">
-
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-                <a href="index.html" id="paginaInicial" class="w3-bar-item w3-button w3-padding-large" > <img src="resources/paginaInicial.png" alt="" style="padding-right: 10px;padding-bottom: 5px;" />Página inicial</a>
-                <div class="w3-dropdown-hover w3-hide-small">
-                    <button class="w3-padding-large w3-button" title="More"><img src="resources/mais.png" alt=""/>Funcionário<i class="fa fa-caret-down"></i></button>  
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="selecionarFuncionario.php" class="w3-bar-item w3-button"><img src="resources/visualizar.png" alt="" style="padding-right: 10px;padding-bottom: 5px;" />Visualizar cadastrados</a>
-                        <a href="inserirFuncionario.php" class="w3-bar-item w3-button"><img src="resources/insert.png" alt="" style="padding-right: 10px;padding-bottom: 5px;" />Inserir</a>
-                        <a href="editarFuncionario.php" class="w3-bar-item w3-button"><img src="resources/edit.png" alt="" style="padding-right: 10px;padding-bottom: 5px;" />Editar</a>
-                    </div>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top"> <a class="navbar-brand" href="#"> <img src="resources/navPetz.png" alt="mdb logo"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav nav-tabs font-weight-bold">
+      <li class="nav-item"> <a class="nav-link active" href="paginaAdm.php">Inicio</a> </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Funcionário</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="selecionarFuncionario.php">Visualizar cadastrados</a>
+          <a class="dropdown-item" href="inserirFuncionario.php">Inserir</a>
+          <a class="dropdown-item" href="excluirFuncionario.php">Excluir</a>
         </div>
+      </li>
+      <li class="nav-item"> <a class="nav-link" href="index.html">Sair</a> </li>
+    </ul>
+  </div>
+</nav>
 
-        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-
-        <!-- Page content -->
-        <div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-            <!-- Automatic Slideshow Images -->
-            <div class="mySlides w3-display-container w3-center">
-                <img src="resources/petz.jpg" style="width:100%">
-                <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-                </div>
-            </div>
-            <div class="mySlides w3-display-container w3-center">
-                <img src="resources/petz2.jpg" style="width:100%">
-                <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-                </div>
-            </div>
-            <div class="mySlides w3-display-container w3-center">
-                <img src="resources/petz3.jpg" style="width:100%">
-                <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-                </div>
-
-            </div>
-
+        <!--Primeiro carrossel-->
+<div id="carousel" class="carousel slide" data-ride="carousel" style="margin-top: 50px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active"> <img class="d-block w-100" src="resources/petz.jpg"> </div>
+    <div class="carousel-item"> <img class="d-block w-100" src="resources/petz2.jpg"> </div>
+    <div class="carousel-item"> <img class="d-block w-100" src="resources/petz3.jpg"> </div>
+  </div>
+</div>
             <hr>
             
-            <div class="content" id="excluirDados" style=" margin-left: 300px; width: 700px; ">
-                <h2 style="margin-left: 250px; color: #0066cc; ">Excluir</h2>            
+            <div class="container" id="excluirDados">
+                <h2 class="titulo text-center">Excluir</h2>            
 
                 <hr/>
 
@@ -93,7 +74,7 @@
                     </form> 
                 </div>
 
-                <div class="quadroResposta">
+                <div class="container azul">
                     <?php
                     require_once('class/classFuncionario.php');
                     $objFuncionario = new classFuncionario();
@@ -106,26 +87,31 @@
                         $objFuncionario->excluirFuncionario($objFuncionario);
                     }
                     $tableFuncionario = $objFuncionario->retFuncionario();
-                    $max = sizeof($tableFuncionario);
 
-                    echo '<hr/>';
-                    for ($i = 0; $i < $max; $i++)
+                    if ($tableFuncionario != "erro")
                     {
-                        echo"Código do funcionário: " . $tableFuncionario[$i]["codFuncionario"];
-                        echo"<br/> Data do cadastro: " . $tableFuncionario[$i]["dataCadastro"];
-                        echo"<br/> Data de nascimento: " . $tableFuncionario[$i]["dataNascimento"];
-                        echo"<br/> Nome: " . $tableFuncionario[$i]["nome"];
-                        echo"<br/> RG: " . $tableFuncionario[$i]["rg"];
-                        echo"<br/> Telefone: " . $tableFuncionario[$i]["telefone"];
-                        echo"<br/> E-mail: " . $tableFuncionario[$i]["email"];
-                        echo"<br/> Endereço: " . $tableFuncionario[$i]["endereco"];
-                        echo"<br/> Cidade: " . $tableFuncionario[$i]["cidade"];
-                        echo"<br/> Estado: " . $tableFuncionario[$i]["estado"];
-                        echo"<br/> País: " . $tableFuncionario[$i]["pais"];
-                        echo"<br/> Código do tipo: " . $tableFuncionario[$i]["codTipo"];
-                        echo"<br/> Senha: " . $tableFuncionario[$i]["senha"] . "<hr/>";
+                        $max = sizeof($tableFuncionario);
+
+                        echo '<hr/>';
+                        for ($i = 0; $i < $max; $i++)
+                        {
+                            echo"Código do funcionário: " . $tableFuncionario[$i]["codFuncionario"];
+                            echo"<br/> Data do cadastro: " . $tableFuncionario[$i]["dataCadastro"];
+                            echo"<br/> Data de nascimento: " . $tableFuncionario[$i]["dataNascimento"];
+                            echo"<br/> Nome: " . $tableFuncionario[$i]["nome"];
+                            echo"<br/> RG: " . $tableFuncionario[$i]["rg"];
+                            echo"<br/> Telefone: " . $tableFuncionario[$i]["telefone"];
+                            echo"<br/> E-mail: " . $tableFuncionario[$i]["email"];
+                            echo"<br/> Endereço: " . $tableFuncionario[$i]["endereco"];
+                            echo"<br/> Cidade: " . $tableFuncionario[$i]["cidade"];
+                            echo"<br/> Estado: " . $tableFuncionario[$i]["estado"];
+                            echo"<br/> País: " . $tableFuncionario[$i]["pais"];
+                            echo"<br/> Código do tipo: " . $tableFuncionario[$i]["codTipo"];
+                            echo"<br/> Senha: " . $tableFuncionario[$i]["senha"] . "<hr/>";
+                        }
+                        echo '';
                     }
-                    echo '';
+                   
                     ?>                                
                 </div>
             </div>   
@@ -136,51 +122,17 @@
             <!-- Image of location/map -->
 
             <!-- Footer -->
-            <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-                <a class="fa fa-facebook-official w3-hover-opacity"  href="https://pt-br.facebook.com/petzbr/" target="_blank"></a>
-                <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/petz/" target="_blank"></a>
-                <a class="fa fa-twitter w3-hover-opacity" href="https://twitter.com/petzoficial" target="_blank"></a>
-                <a class="fa fa-linkedin w3-hover-opacity" href="https://pt.linkedin.com/company/petz" target="_blank"></a>
-                <p class="w3-medium">Copyright© by<a> Gabriel Andrade</a></p>
-            </footer>
-
-            <script>
-                // Automatic Slideshow - change image every 4 seconds
-                var myIndex = 0;
-                carousel();
-
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) {
-                        myIndex = 1
-                    }
-                    x[myIndex - 1].style.display = "block";
-                    setTimeout(carousel, 4000);
-                }
-
-                // Used to toggle the menu on small screens when clicking on the menu button
-                function myFunction() {
-                    var x = document.getElementById("navDemo");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
-                    } else {
-                        x.className = x.className.replace(" w3-show", "");
-                    }
-                }
-
-                // When the user clicks anywhere outside of the modal, close it
-                var modal = document.getElementById('ticketModal');
-                window.onclick = function (event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-            </script>
-            <script src="js/mascaras.js" type="text/javascript"></script>
+<footer class="page-footer font-small cyan darken-3 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center"> <a class="fb-ic" href="https://pt-br.facebook.com/petzbr/" target="_blank"> <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a> <a class="tw-ic" href="https://twitter.com/petzoficial" target="_blank"> <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a> <a class="ins-ic" href="https://www.instagram.com/petz/" target="_blank"> <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a> </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-center py-3 azul">© 2019 Copyright: <a > Petz</a> </div>
+</footer>
+<!--Script da biblioteca bootstrap--> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>
 </html>
