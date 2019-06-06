@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/11/2018, 14:13:15
+    Author     : Aluno
+*/
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+
+#formBuscar {
+    padding-left: 770px;
+
+}
+
+
+
+.carousel {
+    margin: 20px auto 40px auto;
+}
+
+
+
+.tamanhoCarrosel{
+    width: 300px;
+    height: 300px;
+}
+
+
+.navbar{
+	background-color: #E6DE57 !important;
+}
+
+.nav-link{
+	color: #0066cc !important;
+}
+
+.titulo{
+	font-size: 40px;
+	color: #0066cc !important;
+}
+
+.parceiros{
+background-color: #0066cc !important;
+}
+
+footer{
+	background-color: #E6DE57 !important;
+}
+
+.azul{
+	color: #0066cc!important;
+	font-weight: bold;
+}
+  
+.tituloBranco{
+	color: white !important;
+	font-size: 40px;
+}
+
+
+
+
+
